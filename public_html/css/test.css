@@ -1,0 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+html,body{
+    background-color: #ccc;
+    font-family: 'Lobster', cursive;
+}
+.font{
+    font-size: 20px;
+}
