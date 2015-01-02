@@ -16,7 +16,6 @@
         <!--Nav-->
 
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collaspe"
                         data-target=".navbar-collapse">
@@ -48,14 +47,124 @@
         </div>
         <br>
         <br>
+
         <!--lead body-->
 
-        <div class="container"> 
+        <div class="container">
             <div class="row">
                 <h1>Another</h1><hr style="border-top: 1px solid #000">
                 <p class="lead"><strong>Zrobisz co chcesz:</strong> Nigdy nie przejmuj sie niczym !</p>
             </div>
         </div>
+        <br>
+
+        <!--horiziontal form-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label" for="Input Email">Email</label>
+                            <div class="controls">
+                                <input type="text" id="input Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="Input Password">Password</label>
+                            <div class="controls">
+                                <input type="text" id="Input Password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="checkbox">
+                                    <input type="checkbox"> Remember me
+                                </label>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <h4>Input</h4>
+                    <input type="text" placeholder="Text input">
+                    <button type="button" class="btn btn-primary">Do it !</button>
+                    <img class="img-responsive" src="images/brose.png">
+                </div>
+                <div class="col-md-3">
+                    <h4>Textarea 1</h4>
+                    <textarea rows="5" placeholder="Type something"></textarea>
+                </div>
+                <div class="col-md-3">
+                    <h4>Textarea 2</h4>
+                    <textarea rows="5" placeholder="Type something else"></textarea>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 1px solid #000" width="90%">
+
+        <!--Checkbox and Radio Buttons-->
+
+        <div class="container">
+            <div class="row"><h2>Multiple Checkboxes and Radio Buttons</h2></div>
+            <label class="checkbox">
+                <input type="checkbox">
+                Option one is this and that be sure to include why it's sucks.
+            </label>
+            <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option are is this and that be sure to include why it's sucks.
+            </label>
+            <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else, and selecting it will deselect option one.
+            </label>
+
+            <!--multiple checkboxes-->
+
+            <label for="option1" class="checkbox-inline">
+                <input id="option1" type="checkbox" id="inlineChekbox1" value="option1"> -> 1
+            </label>
+            <label for="option2" class="checkbox-inline">
+                <input id="option2" type="checkbox" id="inlineChekbox2" value="option1"> -> 2
+            </label>
+            <label for="option3" class="checkbox-inline">
+                <input id="option3" type="checkbox" id="inlineChekbox3" value="option1"> -> 3
+            </label>
+            <label for="option4" class="checkbox-inline">
+                <input id="option4" type="checkbox" id="inlineChekbox4" value="option1"> -> 4
+            </label>
+        </div>
+        <hr style="border-top: 1px solid #000;" width="90%">
+
+        <!--Extended form control-->
+
+        <div class="container">
+            <div class="col-md-4">
+                <div class="input-prepend">
+                    <span class="add-on">@</span>
+                    <input class="span2" id="prependedinput" type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-prepend input-append">
+                    <span class="add-on">$</span>
+                    <input class="span2" id="appendedprependedinput" type="text" placeholder="Password">
+                    <span class="add-on">.00</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="append">
+                    <input class="span2" id="appendedinput" type="text" placeholder="Password">
+                    <span class="add-on">.00</span>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--nedd to find different code-->
+
 
         <!--Blockquote-->
 
@@ -68,20 +177,19 @@
                             <img class="img-responsive img-circle" src="images/flower.jpg" style="height: 150px; width: 180px;">
                         </div>
                         <blockquote>
-                            <p>&ldquo;Example fucking text Example fucking text Example fucking text 
-                                Example fucking text dupa Example fucking text Example fucking text 
+                            <p>&ldquo;Example fucking text Example fucking text Example fucking text
+                                Example fucking text dupa Example fucking text Example fucking text
                                 Example fucking text chora Example fucking text Example fucking text lol
                                 Example fucking text lol Example fucking text lol Example fucking text lol
                                 Example fucking text lol Example fucking text lol Example fucking text lol&rdquo;</p>
                             <small style="color: ghostwhite;">
                                 Developer of RSS, <cite title="Source title">Kathrine Rolings</cite></small>
-                        </blockquote> 
+                        </blockquote>
                     </div>
-                    
-                    <!--Address example-->
-                    
-                    <div class="col-sm-3 col-sm-offset-2">
 
+                    <!--Address example-->
+
+                    <div class="col-sm-3 col-sm-push-3">
                         <h3>Address</h3>
                         <address>
                             <strong style="color: darkmagenta;">Media Bold</strong><br>
@@ -97,7 +205,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <script src="js/jquery.min.js"></script>
