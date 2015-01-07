@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html,body{
     background-color: #ccc;
-    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 .font{
     font-size: 20px;
