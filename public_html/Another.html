@@ -32,6 +32,7 @@
                     <li class="active"><a href="Another.html">Another</a></li>
                     <li><a href="First Link.html">First Link</a></li>
                     <li><a href="Second Link.html">Second Link</a></li>
+                    <li><a href="Components.html">Components</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Social
                             <span class="caret"></span></a>
@@ -145,13 +146,13 @@
             <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
             <h3>Sample output</h3>
             <samp>This text is meant to be treated as sample output from a computer program.</samp>
+            <hr style="border-top: 1px solid #000;">
         </div>
-        <br>
 
         <!--Tables-->
 
         <div class="container">
-            <h3>Basic example</h3>
+            <h3>Basic example (Tables)</h3>
             <table class="table table-striped">
                 <caption>Optional & Striped Table</caption>
                 <thead>
@@ -296,9 +297,390 @@
                     </tr>
                 </tbody>
             </table>
+            <hr style="border-top: 1px solid #000;" width="90%">
         </div>
 
+        <!--Forms-->
 
+        <div class="container">
+            <h3>Forms-Group</h3>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!--inline form-->
+
+        <div class="container">
+            <h3>Inline Form</h3>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+            <hr>
+        </div>
+
+        <!--Form - addon-->
+
+        <div class="container">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                        <div class="input-group-addon">.00</div>
+                    </div> 
+                </div>
+                <button type="submit" class="btn btn-primary">Transfer cash</button>
+            </form>
+        </div>
+        <br>
+
+        <!--Horizontal form-->
+
+        <div class="container">
+            <h3>Horizontal Form</h3>
+            <form class="form-horizontal">
+                <div class="container-fluid">
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword1" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-1">
+                            <button type="submit" class="btn btn-primary">Sign me</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr style="border-top: 1px solid #000;">
+        </div>
+
+        <!--Suported control-->
+
+        <div class="container">
+            <h3>Text Input</h3>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="text input">
+            </div>
+        </div>
+        <br>
+
+        <!--Textarea-->
+
+        <div class="container"> 
+            <div class="col-sm-4">
+                <h3>Textarea 1</h3>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <div class="col-sm-4">
+                <h3>Textarea 2</h3>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <div class="col-sm-4">
+                <h3>Textarea 3</h3>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+        <br>
+
+        <!--Checkboxes and Radios-->
+
+        <div class="container">
+            <div class="col-sm-6">
+                <h3>Checkboxes and Radios</h3>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                </div>
+                <div class="checkbox disabled">
+                    <label>
+                        <input type="checkbox" value="" disabled>
+                        Option two is disabled
+                    </label>
+                </div>
+                <h3>Radio</h3>
+                <div class="radio">
+                    <input type="radio" name="optionsRadio" id="optionsRadio1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadio" id="optionsRadio2" value="option2">
+                        Option two can be something else and selecting it will deselect option one
+                    </label>
+                </div>
+                <div class="radio disabled">
+                    <label>
+                        <input type="radio" name="optionsRadio" id="optionsRadio3" value="option3">
+                        Option three is disabled
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2">
+                <h3>Checkbox & Radios inline</h3>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                </label>
+                <hr>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                </label> 
+            </div>
+        </div>
+
+        <!--Selects-->
+
+        <div class="container">
+            <h3>Type of Selects</h3>
+            <select multiple class="form-control">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+            </select>
+            <br>
+            <select class="form-control">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+            </select>
+            <hr style="border-top: 1px solid #000;">
+        </div>
+
+        <!--Static control-->
+
+        <div class="container">
+            <h3>Static Control</h3>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">email@example.com</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-6 col-sm-push-3">
+                        <button type="submit" class="btn btn-lg btn-block btn-success">Check me out</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <h3>Static Control Inline</h3>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only">Email</label>
+                    <p class="form-control-static">email@example.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+                <button type="Submit" class="btn btn-default">Confirm identify</button>
+            </form>
+        </div>
+        <br>
+
+        <!--Disabled fieldsets-->
+
+        <div class="container">
+            <h3>Disabled fieldsets</h3>
+            <form>
+                <filedset disabled>
+                    <div class="form-group">
+                        <label for="disabledTextInput">Disabled input</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"
+                               disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledSelect">Disabled Select Menu</label>
+                        <select id="disabledSelect" class="form-control" disabled>
+                            <option>Disabled select</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Can't check this
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </filedset>
+            </form>
+            <hr style="border-top: 1px solid #000;">
+        </div>
+
+        <!--Readonly state-->
+
+        <div class="container">
+            <h3>ReadOnly State</h3>
+            <form>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+                </div>
+            </form>
+        </div>
+
+        <!--Validation States-->
+
+        <div class="container">
+            <h3>Validayion States</h3>
+            <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess1">Input with Success</label>
+                <input type="text" class="form-control" id="inputSuccess1">
+            </div>
+            <div class="form-group has-warning">
+                <label class="control-label" for="inputWarning1">Input with Warning</label>
+                <input type="text" class="form-control" id="inputWarning1">
+            </div>
+            <div class="form-group has-error">
+                <label class="control-label" for="inputError1">Input with Error</label>
+                <input type="text" class="form-control" id="inputError1">
+            </div>
+            <div class="has-success">
+                <div class="checkbox">
+                    <label> 
+                        <input type="checkbox" id="checkboxSuccess" value="option1">
+                        Checkbox with Success
+                    </label>
+                </div>
+            </div>
+            <div class="has-warning">
+                <div class="checkbox">
+                    <label> 
+                        <input type="checkbox" id="checkboxWarning" value="option1">
+                        Checkbox with Warning
+                    </label>
+                </div>
+            </div>
+            <div class="has-error">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="checkboxError" value="option1">
+                        Checkbox with Error
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!--Validation States with optional icons-->
+
+        <div class="container">
+            <h3>Validation States with Opiotnal Icons (in horizontal form)</h3>
+            <hr style="border-top: 1px solid darkolivegreen;">
+            <form class="form-horizontal">
+                <div class="has-success has-feedback">
+                    <label class="col-sm-2 control-label" for="inputSuccess2">Input with Success</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> 
+                        <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                    </div>
+                </div>
+
+                <div class="has-warning has-feedback">
+                    <label class="col-sm-2 control-label" for="inputWarning2">Input with Warning</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputWarning2Status" class="sr-only">(warning)</span>
+                    </div>
+                </div>
+                <div class="has-error has-feedback">
+                    <label class="col-sm-2 control-label" for="inputError2">Input with Error</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputError2Status">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputError2Status" class="sr-only">(error)</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Control Sizing-->
+        
+        <div class="container">
+            <h3>Control Sizing</h3>
+            
+        </div>
+        
+
+        <br>
         <!--Blockquote-->
 
         <div class="info" style="background-color: graytext;">
