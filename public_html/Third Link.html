@@ -48,7 +48,7 @@
         </div>
         <br>
         <br>
-        
+
         <!--lead body-->
 
         <div class="container"> 
@@ -70,34 +70,77 @@
         </div>
 
         <!--Font Awesome Icons in modals-->        
-   
+
         <div class="container">
-             <!--button trigger modal-->
-             <h3>Modal</h3>
-             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                 Font Awesome Icon 
-             </button><h4>If you want see something just push!</h4>
-             <!--Modal-->
-             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            <!--button trigger modal-->
+            <h3>Modal</h3>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Font Awesome Icon 
+            </button><h4>If you want see something just push!</h4>
+            <!--Modal-->
+            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" 
+                 aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            Awesome fonts will be here
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Nice</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 1px solid #000;" width="85%">
+
+        <!--Modal with input-->
+
+        <div class="container">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="@mdo">Open modal for @mdo</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="@fat">Open modal for @fat</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+                    data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
+            ...more buttons...
+
+            <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" 
+                 aria-labelledby="exampleModalLabel" 
                  aria-hidden="true">
-                 <div class="modal-dialog">
-                     <div class="modal-content">
-                         <div class="modal-header">
-                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                 <span aria-hidden="true">&times;</span>
-                             </button>
-                             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                         </div>
-                         <div class="modal-body">
-                             Awesome fonts will be here
-                         </div>
-                         <div class="modal-footer">
-                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-primary">Nice</button>
-                         </div>
-                     </div>
-                 </div>
-             </div>
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="control-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <br>
@@ -109,7 +152,8 @@
                     <div class="col-sm-6">
                         <h3>Blockquote</h3>
                         <div class="col-md-4">
-                            <img class="img-responsive img-circle" src="images/flower.jpg" style="height: 150px; width: 180px;">
+                            <img class="img-responsive img-circle" src="images/flower.jpg" 
+                                 style="height: 150px; width: 180px;">
                         </div>
                         <blockquote>
                             <p>&ldquo;Example fucking text Example fucking text Example fucking text 
@@ -142,8 +186,9 @@
             </div>
         </div> 
 
-     
+
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+    
     </body>
 </html>
