@@ -143,9 +143,23 @@
                 </div>
             </div>
         </div>
+        <br>
 
+        <!--ToolTips-->
+        <div class="container">
+            <h3>Button and Tooltip</h3>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" 
+                    title="Tooltip on left">Tooltip on left</button>
 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" 
+                    title="Tooltip on top">Tooltip on top</button>
 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" 
+                    title="Tooltip on bottom">Tooltip on bottom</button>
+
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" 
+                    title="Tooltip on right">Tooltip on right</button>
+        </div>
 
         <br>
         <!--Blockquote-->
@@ -193,6 +207,10 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-       
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
     </body>
 </html>
