@@ -159,6 +159,30 @@
 
             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" 
                     title="Tooltip on right">Tooltip on right</button>
+            <hr>
+            <div class="col-lg-8 col-lg-push-3">
+                <h3>Popover</h3>
+                <button type="button" class="btn btn-default" data-container="body" 
+                        data-toggle="popover" data-placement="left" 
+                        data-content="Popover on your left like you see it is on that side.">
+                    Popover on left
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                        data-placement="top" data-content="Popover at the top like you see it is on that side.">
+                    Popover on top
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                        data-placement="bottom" data-content="Popover at the bottom like you see it is on that side.">
+                    Popover on bottom
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                        data-placement="right" data-content="Popover on your right like you see it is on that side.">
+                    Popover on right
+                </button>
+            </div>
         </div>
 
         <br>
@@ -210,6 +234,9 @@
         <script>
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(function () {
+                $('[data-toggle="popover"]').popover();
             });
         </script>
     </body>
