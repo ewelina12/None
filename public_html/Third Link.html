@@ -51,7 +51,7 @@
 
         <!--lead body-->
 
-        <div class="container"> 
+        <div class="container">
             <div class="row">
                 <h1>Lead Example</h1><hr style="border-top: 1px solid #000">
             </div>
@@ -69,16 +69,16 @@
             <a href="http://localhost:8383/None/Second Link.html" class="btn btn-danger">Go to Second Link</a>
         </div>
 
-        <!--Font Awesome Icons in modals-->        
+        <!--Font Awesome Icons in modals-->
 
         <div class="container">
             <!--button trigger modal-->
             <h3>Modal</h3>
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Font Awesome Icon 
+                Font Awesome Icon
             </button><h4>If you want see something just push!</h4>
             <!--Modal-->
-            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" 
+            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"
                  aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -105,16 +105,16 @@
         <!--Modal with input-->
 
         <div class="container">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
                     data-whatever="@mdo">Open modal for @mdo</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
                     data-whatever="@fat">Open modal for @fat</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
                     data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
             ...more buttons...
 
-            <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" 
-                 aria-labelledby="exampleModalLabel" 
+            <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -148,40 +148,109 @@
         <!--ToolTips-->
         <div class="container">
             <h3>Button and Tooltip</h3>
-            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"
                     title="Tooltip on left">Tooltip on left</button>
 
-            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top"
                     title="Tooltip on top">Tooltip on top</button>
 
-            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
                     title="Tooltip on bottom">Tooltip on bottom</button>
 
-            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" 
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"
                     title="Tooltip on right">Tooltip on right</button>
             <hr>
             <div class="col-lg-8 col-lg-push-3">
                 <h3>Popover</h3>
-                <button type="button" class="btn btn-default" data-container="body" 
-                        data-toggle="popover" data-placement="left" 
+                <button type="button" class="btn btn-default" data-container="body"
+                        data-toggle="popover" data-placement="left"
                         data-content="Popover on your left like you see it is on that side.">
                     Popover on left
                 </button>
 
-                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
                         data-placement="top" data-content="Popover at the top like you see it is on that side.">
                     Popover on top
                 </button>
 
-                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
                         data-placement="bottom" data-content="Popover at the bottom like you see it is on that side.">
                     Popover on bottom
                 </button>
 
-                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover"
                         data-placement="right" data-content="Popover on your right like you see it is on that side.">
                     Popover on right
                 </button>
+            </div>
+        </div>
+        <br>
+
+        <!--Accordion Example-->
+        
+        <div class="container">
+            <h2>Accordion example</h2>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" 
+                                aria-expanded="true" aria-controls="collapseOne">
+                                   According example Info #1
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            Zamiast sie skupic na tekscie to kurwa trza myslec nad kodem a zeby byl efekt to trzeba 
+                            wymyslac te pierdolone teksty. Ani sie nad jebana interpunkcja nie zastanawiam bo to nie 
+                            jest wazne a najgorsze jest ze jeszcze dwa takie okna musze zapelnic i nie wiem do cholery
+                            czym. Co zrobic chcesz sie uczyc ale tego jest tyle ze po kilku godzinach mozg rozpierdala.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   According example success #2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            No i dalej pierdolenie sie z jebanymi tekstami i zaluje ze nie potrafie szybciej pisac 
+                            by miec szybciej ten pierdolony tekst z glowy po za tym wkurwia mnie ta klawiatura wole 
+                            wole miec osobna a nie oparte rece o lapa bo kurwa to gowno jebane jesqt w chuj nie wygodne
+                            nie polecam i chuj. Ile jeszcze moge napisac jeszcze mnie czeka kolejne okno i teraz nie wiem
+                            co jeszcze tam wpierdole. Koniec jebanej bajki.
+                        </div>    
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   According example warning #3
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            No i dalej pierdolenie sie z jebanymi tekstami i zaluje ze nie potrafie szybciej pisac 
+                            by miec szybciej ten pierdolony tekst z glowy po za tym wkurwia mnie ta klawiatura wole 
+                            wole miec osobna a nie oparte rece o lapa bo kurwa to gowno jebane jesqt w chuj nie wygodne
+                            nie polecam i chuj. Ile jeszcze moge napisac jeszcze mnie czeka kolejne okno i teraz nie wiem
+                            co jeszcze tam wpierdole. Koniec jebanej bajki.
+                            Zamiast sie skupic na tekscie to kurwa trza myslec nad kodem a zeby byl efekt to trzeba 
+                            wymyslac te pierdolone teksty. Ani sie nad jebana interpunkcja nie zastanawiam bo to nie 
+                            jest wazne a najgorsze jest ze jeszcze dwa takie okna musze zapelnic i nie wiem do cholery
+                            czym. Co zrobic chcesz sie uczyc ale tego jest tyle ze po kilku godzinach mozg rozpierdala.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -194,18 +263,18 @@
                     <div class="col-sm-6">
                         <h3>Blockquote</h3>
                         <div class="col-md-4">
-                            <img class="img-responsive img-circle" src="images/flower.jpg" 
+                            <img class="img-responsive img-circle" src="images/flower.jpg"
                                  style="height: 150px; width: 180px;">
                         </div>
                         <blockquote>
-                            <p>&ldquo;Example fucking text Example fucking text Example fucking text 
-                                Example fucking text dupa Example fucking text Example fucking text 
+                            <p>&ldquo;Example fucking text Example fucking text Example fucking text
+                                Example fucking text dupa Example fucking text Example fucking text
                                 Example fucking text chora Example fucking text Example fucking text lol
                                 Example fucking text lol Example fucking text lol Example fucking text lol
                                 Example fucking text lol Example fucking text lol Example fucking text lol&rdquo;</p>
                             <small style="color: ghostwhite;">
                                 Developer of RSS, <cite title="Source title">Kathrine Rolings</cite></small>
-                        </blockquote> 
+                        </blockquote>
                     </div>
 
                     <!--Address example-->
@@ -226,7 +295,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <script src="js/jquery.min.js"></script>
